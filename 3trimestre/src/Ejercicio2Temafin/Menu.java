@@ -316,7 +316,7 @@ public class Menu {
 		}
 		return usuario1;
 	}
-	
+	// Este metodo me ha dado pereza hacerlo 
 	public void cobrarVenta() {
 		System.out.println("¿Cual es su cuenta??");
 		mostrarViajantes();

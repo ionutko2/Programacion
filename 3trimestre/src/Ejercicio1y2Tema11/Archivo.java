@@ -18,13 +18,7 @@ public class Archivo {
 	Scanner s = null;
 	
 	public Archivo() {
-		try {
-			s = new Scanner(
-					new BufferedReader(
-							new FileReader("numerosprimos.txt")));
-		} catch (FileNotFoundException e) {
-			System.out.println("Se ha creado un archivo con ese nombre");
-		}
+		
 	}
 	public void escribirArchivo() {
 		NumerosPrimos primos = new NumerosPrimos();
@@ -40,6 +34,7 @@ public class Archivo {
 			ps.close();
 		}
 	}
+	
 	public static void main (String [] Args) {
 		Archivo prueba = new Archivo();
 		prueba.escribirArchivo();
